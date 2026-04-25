@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git --yes)",
+      "Bash(npm install *)",
+      "Bash(npx shadcn@latest init --yes)",
+      "Bash(pkill -f \"shadcn\")",
+      "Bash(npm test *)",
+      "Bash(npm run *)",
+      "Bash(npm uninstall *)",
+      "Bash(curl -s -o /dev/null -w \"/ -> %{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"/quiz/iniciante -> %{http_code}\\\\n\" http://localhost:3000/quiz/iniciante)",
+      "Bash(curl -s -o /dev/null -w \"/resultado -> %{http_code}\\\\n\" \"http://localhost:3000/resultado?track=avancado&score=80&time=120000\")",
+      "Bash(curl -s -o /dev/null -w \"/api/og -> %{http_code}\\\\n\" \"http://localhost:3000/api/og?track=avancado&score=80\")"
+    ]
+  }
+}

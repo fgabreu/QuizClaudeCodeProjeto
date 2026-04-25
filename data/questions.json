@@ -1,0 +1,298 @@
+[
+  {
+    "id": "q-ini-001",
+    "track": "iniciante",
+    "category": "o-que-e",
+    "statement": "Claude Code é exclusivamente uma extensão de IDE para VS Code e JetBrains.",
+    "answer": false,
+    "explanation": "Claude Code existe como CLI (terminal), extensão de IDE (VS Code e JetBrains), desktop app (Mac/Windows) e web app (claude.ai/code).",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-ini-002",
+    "track": "iniciante",
+    "category": "o-que-e",
+    "statement": "Claude Code permite que desenvolvedores interajam com Claude diretamente no terminal, executando tarefas como editar arquivos e rodar comandos.",
+    "answer": true,
+    "explanation": "Correto. O Claude Code CLI permite interação direta no terminal, com capacidade de ler, editar e criar arquivos, executar comandos Bash e muito mais.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-ini-003",
+    "track": "iniciante",
+    "category": "modelos",
+    "statement": "Na família Claude 4.x, o modelo Haiku é mais rápido e econômico que Opus, mas menos capaz em tarefas complexas.",
+    "answer": true,
+    "explanation": "Correto. Haiku é otimizado para velocidade e custo, Sonnet equilibra capacidade e custo, Opus 4.7 é o mais capaz para tarefas complexas.",
+    "reference_url": "https://docs.anthropic.com/en/docs/about-claude/models",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-ini-004",
+    "track": "iniciante",
+    "category": "modelos",
+    "statement": "O modelo Claude Sonnet 4.6 é o mais poderoso da família Claude 4.x.",
+    "answer": false,
+    "explanation": "Falso. O mais poderoso é o Claude Opus 4.7. Sonnet 4.6 oferece equilíbrio entre capacidade e custo, sendo o padrão para a maioria dos casos.",
+    "reference_url": "https://docs.anthropic.com/en/docs/about-claude/models",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-ini-005",
+    "track": "iniciante",
+    "category": "pricing",
+    "statement": "Para usar Claude Code, é obrigatório ter uma conta na API da Anthropic com faturamento ativo.",
+    "answer": false,
+    "explanation": "Não. Usuários do plano Claude Pro e Max também podem usar Claude Code, sem precisar de conta de API separada.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/setup",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-ini-006",
+    "track": "iniciante",
+    "category": "pricing",
+    "statement": "O plano Claude Max oferece limites de uso mais altos do que o plano Pro para uso do Claude Code.",
+    "answer": true,
+    "explanation": "Correto. O plano Max foi criado para usuários com necessidades mais intensivas, oferecendo limites maiores que o plano Pro.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/setup",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-ini-007",
+    "track": "iniciante",
+    "category": "casos-de-uso",
+    "statement": "Claude Code pode gerar testes automatizados para código existente sem que o desenvolvedor precise escrever nenhum teste manualmente.",
+    "answer": true,
+    "explanation": "Correto. Gerar testes é um dos casos de uso mais comuns do Claude Code — ele analisa o código, entende a lógica e escreve testes unitários e de integração.",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-ini-008",
+    "track": "iniciante",
+    "category": "casos-de-uso",
+    "statement": "Claude Code é adequado apenas para projetos de front-end, não sendo útil para back-end ou DevOps.",
+    "answer": false,
+    "explanation": "Falso. Claude Code funciona com qualquer stack: front-end, back-end, scripts de DevOps, automação, infraestrutura como código e muito mais.",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-ini-009",
+    "track": "iniciante",
+    "category": "concorrentes",
+    "statement": "Diferente do GitHub Copilot, o Claude Code é um agente que pode executar múltiplas etapas de forma autônoma, como criar arquivos, rodar testes e corrigir erros.",
+    "answer": true,
+    "explanation": "Correto. Claude Code é um agente de código — vai além do autocomplete, podendo planejar e executar tarefas complexas com múltiplos passos.",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-ini-010",
+    "track": "iniciante",
+    "category": "concorrentes",
+    "statement": "Claude Code e o Cursor são produtos da mesma empresa (Anthropic).",
+    "answer": false,
+    "explanation": "Falso. Cursor é um produto da empresa Anysphere, que usa modelos de IA (incluindo Claude) como backend. Claude Code é o produto oficial da Anthropic.",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-int-001",
+    "track": "intermediario",
+    "category": "slash-commands",
+    "statement": "O comando /clear apaga permanentemente o histórico de conversas anteriores do disco.",
+    "answer": false,
+    "explanation": "Falso. /clear apenas reseta o contexto da conversa atual em memória; ele não remove arquivos de histórico persistidos em disco.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/slash-commands",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-int-002",
+    "track": "intermediario",
+    "category": "slash-commands",
+    "statement": "O comando /init analisa a base de código atual e cria (ou sugere melhorias para) um arquivo CLAUDE.md.",
+    "answer": true,
+    "explanation": "Correto. /init inspeciona o repositório e gera um CLAUDE.md com arquitetura, comandos importantes e contexto útil para futuras sessões.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/slash-commands",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-int-003",
+    "track": "intermediario",
+    "category": "permissoes",
+    "statement": "No modo Plan (plan mode), Claude Code pode editar arquivos diretamente sem pedir confirmação.",
+    "answer": false,
+    "explanation": "Falso. No plan mode, Claude Code mostra o plano de ação mas não executa edições — ele aguarda aprovação antes de qualquer modificação.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/settings",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-int-004",
+    "track": "intermediario",
+    "category": "permissoes",
+    "statement": "É possível configurar permissões para que determinadas ferramentas (como Bash) sejam executadas automaticamente sem solicitar aprovação do usuário.",
+    "answer": true,
+    "explanation": "Correto. Através do settings.json, é possível definir allowlists de ferramentas e comandos que rodam sem confirmação interativa.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/settings",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-int-005",
+    "track": "intermediario",
+    "category": "config",
+    "statement": "O arquivo CLAUDE.md na raiz do projeto é carregado automaticamente pelo Claude Code em toda nova sessão como contexto.",
+    "answer": true,
+    "explanation": "Correto. O CLAUDE.md é lido automaticamente no início de cada sessão, fornecendo contexto sobre o projeto, comandos e convenções.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/memory",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-int-006",
+    "track": "intermediario",
+    "category": "config",
+    "statement": "O settings.json do Claude Code aceita apenas configurações globais, não sendo possível ter configurações específicas por projeto.",
+    "answer": false,
+    "explanation": "Falso. Há settings.json global (~/.claude/settings.json) e local (.claude/settings.json) por projeto, com as configurações locais sobrepondo as globais.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/settings",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-int-007",
+    "track": "intermediario",
+    "category": "ferramentas",
+    "statement": "A ferramenta Edit do Claude Code envia apenas o diff da alteração, sendo mais eficiente que a ferramenta Write para modificar arquivos existentes.",
+    "answer": true,
+    "explanation": "Correto. Edit envia somente as alterações (old_string → new_string), economizando tokens. Write reescreve o arquivo completo e deve ser usada para criação ou reescrita total.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/tools",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-int-008",
+    "track": "intermediario",
+    "category": "ferramentas",
+    "statement": "A ferramenta Grep do Claude Code usa ripgrep internamente para busca de conteúdo em arquivos.",
+    "answer": true,
+    "explanation": "Correto. A ferramenta Grep é construída sobre o ripgrep (rg), suportando sintaxe de regex completa e filtros por tipo de arquivo.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/tools",
+    "difficulty_weight": 2
+  },
+  {
+    "id": "q-int-009",
+    "track": "intermediario",
+    "category": "ide",
+    "statement": "A extensão Claude Code para VS Code permite que o usuário interaja com o agente diretamente dentro do editor, sem abrir um terminal separado.",
+    "answer": true,
+    "explanation": "Correto. A extensão integra o Claude Code ao VS Code com painel lateral, permitindo conversas e edições sem sair do editor.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/ide-integrations",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-int-010",
+    "track": "intermediario",
+    "category": "ide",
+    "statement": "Claude Code só está disponível para VS Code, não havendo suporte para IDEs da JetBrains.",
+    "answer": false,
+    "explanation": "Falso. Claude Code tem extensão tanto para VS Code quanto para IDEs da JetBrains (IntelliJ, WebStorm, PyCharm, etc.).",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/ide-integrations",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-adv-001",
+    "track": "avancado",
+    "category": "hooks",
+    "statement": "Um hook PreToolUse pode bloquear a execução de uma ferramenta retornando um exit code diferente de zero.",
+    "answer": true,
+    "explanation": "Correto. Hooks PreToolUse podem inspecionar a chamada de ferramenta e bloquear a execução retornando exit code não-zero, com mensagem de erro enviada ao Claude.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/hooks",
+    "difficulty_weight": 2
+  },
+  {
+    "id": "q-adv-002",
+    "track": "avancado",
+    "category": "hooks",
+    "statement": "O hook Stop é executado sempre que Claude Code termina uma resposta, permitindo notificações ou pós-processamento.",
+    "answer": true,
+    "explanation": "Correto. O hook Stop é disparado quando o Claude finaliza sua resposta, útil para notificações (ex: push notification, som de alerta) ou logging.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/hooks",
+    "difficulty_weight": 2
+  },
+  {
+    "id": "q-adv-003",
+    "track": "avancado",
+    "category": "mcp",
+    "statement": "MCP (Model Context Protocol) é um protocolo que permite ao Claude Code conectar-se a fontes de dados e ferramentas externas de forma padronizada.",
+    "answer": true,
+    "explanation": "Correto. MCP é um protocolo aberto da Anthropic que padroniza como modelos de IA se conectam a ferramentas, APIs e fontes de dados externas.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/mcp",
+    "difficulty_weight": 1
+  },
+  {
+    "id": "q-adv-004",
+    "track": "avancado",
+    "category": "mcp",
+    "statement": "Servidores MCP só podem ser configurados globalmente e não é possível ter servidores MCP específicos por projeto.",
+    "answer": false,
+    "explanation": "Falso. Servidores MCP podem ser configurados tanto globalmente (settings.json do usuário) quanto por projeto (.claude/settings.json), com configurações locais tendo prioridade.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/mcp",
+    "difficulty_weight": 2
+  },
+  {
+    "id": "q-adv-005",
+    "track": "avancado",
+    "category": "subagents",
+    "statement": "Subagentes (agents) no Claude Code podem ser especializados com tipos específicos, como 'Explore' para análise de código ou 'Plan' para arquitetura de soluções.",
+    "answer": true,
+    "explanation": "Correto. A ferramenta Agent permite escolher tipos especializados (Explore, Plan, etc.) com ferramentas e contexto adequados para cada função.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/sub-agents",
+    "difficulty_weight": 2
+  },
+  {
+    "id": "q-adv-006",
+    "track": "avancado",
+    "category": "subagents",
+    "statement": "Subagentes no Claude Code compartilham automaticamente todo o contexto da conversa principal com o agente pai.",
+    "answer": false,
+    "explanation": "Falso. Subagentes iniciam sem o contexto da conversa principal — eles são 'cold starts'. O contexto relevante deve ser passado explicitamente no prompt ao criar o agente.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/sub-agents",
+    "difficulty_weight": 2
+  },
+  {
+    "id": "q-adv-007",
+    "track": "avancado",
+    "category": "skills",
+    "statement": "Skills no Claude Code são definidas com um arquivo Markdown que inclui frontmatter YAML descrevendo o trigger, ferramentas disponíveis e instruções.",
+    "answer": true,
+    "explanation": "Correto. Skills são definidas em arquivos .md com frontmatter YAML contendo campos como description, tools permitidas, e quando o skill deve ser ativado.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/skills",
+    "difficulty_weight": 2
+  },
+  {
+    "id": "q-adv-008",
+    "track": "avancado",
+    "category": "sdk",
+    "statement": "O Claude Agent SDK permite que desenvolvedores criem agentes personalizados que usam Claude como backbone, com suporte a tool use e prompt caching.",
+    "answer": true,
+    "explanation": "Correto. O SDK da Anthropic suporta criação de agentes com tool use, prompt caching (que reduz custo e latência) e streaming de respostas.",
+    "reference_url": "https://docs.anthropic.com/en/docs/build-with-claude/agents",
+    "difficulty_weight": 2
+  },
+  {
+    "id": "q-adv-009",
+    "track": "avancado",
+    "category": "sdk",
+    "statement": "O prompt caching na API da Anthropic requer que o desenvolvedor gerencie manualmente os IDs de cache para cada requisição.",
+    "answer": false,
+    "explanation": "Falso. O prompt caching é configurado adicionando cache_control nos blocos de conteúdo — a Anthropic gerencia o armazenamento e a invalidação automaticamente.",
+    "reference_url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching",
+    "difficulty_weight": 2
+  },
+  {
+    "id": "q-adv-010",
+    "track": "avancado",
+    "category": "plugins",
+    "statement": "Plugins no Claude Code podem adicionar novos tipos de agentes (subagent_type) com capacidades e ferramentas customizadas.",
+    "answer": true,
+    "explanation": "Correto. O sistema de plugins permite registrar novos tipos de agentes com ferramentas específicas, expandindo as capacidades padrão do Claude Code.",
+    "reference_url": "https://docs.anthropic.com/en/docs/claude-code/plugins",
+    "difficulty_weight": 2
+  }
+]
